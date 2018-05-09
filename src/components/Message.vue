@@ -26,4 +26,12 @@
       margin: 15px 0;
   }
 
+  @media (max-width: 500px ) {
+    h2{
+      font-size: 1.5rem;
+    }
+
+
+  }
+
 </style>

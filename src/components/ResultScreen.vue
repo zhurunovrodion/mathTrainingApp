@@ -17,6 +17,16 @@
 
 
 <style>
+  @media (max-width: 500px ) {
+    h2{
+      font-size: 1.55rem;
+    }
 
+    h3{
+      font-size: 1.45rem;
+    }
+
+
+  }
 
 </style>

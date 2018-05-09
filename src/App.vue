@@ -177,6 +177,8 @@
 
 <style scoped>
 
+
+
   .box{
     margin-top: 15px;
 
@@ -211,4 +213,12 @@
    from{transform: rotateX(0deg);}
    to{transform: roteteX(90deg);}
  }
+
+  @media (max-width: 500px ) {
+    h1{
+      font-size: 1.8rem;
+    }
+
+
+  }
 </style>
