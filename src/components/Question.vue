@@ -16,10 +16,11 @@
 
 <script>
   export default {
+      props:['settings'],
       data(){
         return{
-            x: mtRand(100, 200),
-            y: mtRand(100,200)
+            x: mtRand(this.settings.from, this.settings.to),
+            y: mtRand(this.settings.from,this.settings.to)
         }
       },
       computed: {
@@ -29,8 +30,8 @@
         answers(){
 
          let res = [this.good];
-         while (res.length < 4){
-             let num = mtRand(this.good - 20, this.good+20);
+         while (res.length < this.settings.variants){
+             let num = mtRand(this.good - this.settings.range, this.good + this.settings.range);
              if(res.indexOf(num) === -1){
                res.push(num);
              }
@@ -60,19 +61,20 @@
 
 
 <style scoped>
+  .alert{
+    text-align: center;
+  }
   .buttons{
     text-align: center;
   }
 
   .buttons {
 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
   }
 
   .buttons button{
-    margin: 10px;
+    margin: 15px;
 
   }
 
