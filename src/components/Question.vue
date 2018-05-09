@@ -64,8 +64,17 @@
     text-align: center;
   }
 
+  .buttons {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .buttons button{
     margin: 10px;
+
   }
+
 
 </style>
